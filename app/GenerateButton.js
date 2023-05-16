@@ -1,6 +1,5 @@
 'use client';
 
-import { Router } from 'next/router';
 import { useState } from 'react';
 
 export default function GenerateButton() {
@@ -21,7 +20,6 @@ export default function GenerateButton() {
         onClick={async () => {
           setColor(`#${Math.floor(Math.random() * 16777215).toString(16)}`);
           await fetchMemoryUsage();
-          Router.refresh();
         }}
       >
         generate
