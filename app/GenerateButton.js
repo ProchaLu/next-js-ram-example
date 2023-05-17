@@ -9,7 +9,6 @@ export default function GenerateButton() {
   const fetchMemoryUsage = async () => {
     const response = await fetch('/api/memory');
     const data = await response.json();
-    console.log(data);
     setMemoryUsage(data);
   };
 
